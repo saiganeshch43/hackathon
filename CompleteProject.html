@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f7f7f7;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+    
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            font-weight: 600;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="url"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        label {
+    font-weight: 600;
+    color: rgb(25, 85, 65); /* Blue color for label names */
+    
+    margin-bottom: 5px;
+}
+h1{
+    color: orangered;
+    text-align: center;
+}
+
+        /* Custom styling for select dropdown */
+        select {
+            appearance: none;
+            background-color: white;
+            background-image: url("data:image/svg+xml;utf8,<svg fill='%23333' height='24' width='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z' /></svg>");
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            padding-right: 30px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Checkpoint Submission</h1>
+        <form action="#" method="post">
+            <div class="input-group">
+                <label for="Team Name">Team Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+         
+            <div class="input-group">
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="us">United States</option>
+                    <option value="ca">Canada</option>
+                    <option value="uk">United Kingdom</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="bio">Describe What you Completed:</label>
+                <textarea id="bio" name="bio" rows="5" required></textarea>
+            </div>
+            <div class="input-group">
+                    <label for="ValidationPictures">Insert Snapshots Of Your Project For Validation:</label>
+                    <input type="file" name="image" id="image" accept="image/*">
+            </div>
+            <div class="input-group">
+                <label for="PPTX">Power Point Presentation:</label>
+                <input type="file" name="ppt" id="ppt" accept="image/*">
+            </div>
+            <div class="input-group">
+                <label for="BussinessModel">BussinessModel and Flow Chat Diagrams:</label>
+                <input type="file" name="bm" id="bm" accept="image/*">
+            </div>
+            <div class="input-group">
+                <label for="github-link">GitHub Code Link:</label>
+                <input type="url" id="github-link" name="github-link" required>
+            </div>
+            <div class="input-group">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
